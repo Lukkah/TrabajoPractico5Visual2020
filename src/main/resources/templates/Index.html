@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="styLesheet" href="css/estilos.css"/>
+</head>
+<body>
+	<div id="contenedor">
+		<header>
+			<h1>Liga de Futbol Profesional</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="Fixture.html">Fixture y resultados</a></li>
+				<li><a href="Equipos.html">Equipos</a></li>
+			</ul>
+			<div id="welcome">
+				<h4 th:text=" 'Bienvenido! '+${usuario}"></h4>
+			</div>
+		</nav>
+		<section>
+			<h2 class="titulo">Noticias</h2>
+			<div class="noticia">
+				<img src="img/section/not1.jpg"></img>
+				<p>12/03/20 <br>Nueva noticia de los partidos suspendidos por la cuarentena</p>
+			</div>
+			<div class="noticia">
+				<img src="img/section/not2.jpg"></img>
+				<p>13/03/20 <br>Repetición de la transmición en vivo de la final de la copa anual de profesiona</p>
+			</div>
+			<div class="noticia">
+				<img src="img/section/not3.jpg"></img>
+				<p>20/03/20 <br>Reprogramación de sorteos para las próximas fechas.</p>
+			</div>
+			<div style="clear: both"></div>
+		</section>
+		<aside>
+			<h3 class="titulo">Auspiciantes</h3>
+			<div id="asdImg">
+				<img alt="" src="img/aside/as1.jpg">
+				<img alt="" src="img/aside/as2.jpg">
+				<img alt="" src="img/aside/as3.jpg">
+				<img alt="" src="img/aside/as4.jpg">
+			</div>
+		</aside>
+		<footer>
+			<p>
+				Avds. Pedro Ortiz de Zarate N°455 - Tel 388 4789555
+				<a href="https://www.instagram.com"><img alt="" src="img/footer/foot1.jpg"></a>
+				<a href="https://www.facebook.com"><img alt="" src="img/footer/foot2.jpg"></a>
+				<a href="https://www.twitter.com"><img alt="" src="img/footer/foot3.jpg"></a>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
